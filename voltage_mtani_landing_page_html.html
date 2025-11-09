@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voltage Mtani — Your Trusted Plug in Ruiru</title>
+  <meta name="description" content="Voltage Mtani — Reliable electrical services in Ruiru. Wiring, lighting, repairs, smart installs. Call/WhatsApp 0769 895 701." />
+  <style>
+    :root{--accent:#ffcc00;--dark:#0f1724;--muted:#6b7280;--card:#0b1220}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, Roboto, 'Segoe UI', Arial; margin:0; color:#eef2f7; background:linear-gradient(180deg,#051023 0%, #071428 60%);}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#ff9f1c);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071428;font-size:28px}
+    h1{margin:0;font-size:28px;letter-spacing:0.3px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;margin-top:22px}
+    .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .cta{display:flex;gap:12px;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;font-weight:700;color:#071428;background:var(--accent);text-decoration:none}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff;font-weight:600}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .service{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;text-align:center}
+    .service h4{margin:8px 0 4px;font-size:15px}
+    .service p{margin:0;color:var(--muted);font-size:13px}
+    .right{display:flex;flex-direction:column;gap:12px}
+    .card.small{padding:16px}
+    .contact-row{display:flex;gap:10px;align-items:center}
+    .phone{font-weight:800}
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px}
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+    .feature{display:flex;gap:10px;align-items:flex-start}
+    .dot{width:14px;height:14px;border-radius:4px;background:var(--accent);display:inline-block}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.services{grid-template-columns:repeat(2,1fr);}.features{grid-template-columns:1fr}}
+    @media(max-width:480px){.services{grid-template-columns:1fr}.logo{width:56px;height:56px;font-size:22px}h1{font-size:20px}}
+    /* subtle animated plug */
+    .plug-anim{width:100%;height:160px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .plug-emoji{font-size:56px;transform:translateY(0);animation:float 3s ease-in-out infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+    .form-row{display:flex;gap:8px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:#fff}
+    textarea{min-height:90px}
+    .muted{color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">⚡</div>
+        <div>
+          <h1>Voltage Mtani — Your Trusted Plug</h1>
+          <p class="lead">Serving <strong>Ruiru</strong> with safe, reliable electrical services</p>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="muted">Call / WhatsApp</div>
+        <a class="phone btn" href="tel:+254769895701">+254 769 895 701</a>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <div class="plug-anim">
+          <div class="plug-emoji">🔌</div>
+        </div>
+        <h2 style="margin-top:18px;">No power? We’re the real plug.</h2>
+        <p class="muted">Wiring. Lighting. Repairs. Smart installs. Fast, affordable and trusted in Ruiru.</p>
+
+        <div class="cta">
+          <a class="btn" href="https://wa.me/254769895701" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn secondary" href="#services">See Services</a>
+        </div>
+
+        <div class="services" id="services">
+          <div class="service">
+            <div style="font-size:22px">💡</div>
+            <h4>Wiring & Installations</h4>
+            <p>Home & office wiring, socket installs, safety checks.</p>
+          </div>
+          <div class="service">
+            <div style="font-size:22px">🔧</div>
+            <h4>Repairs & Maintenance</h4>
+            <p>Fault finding, fuse/MCB replacements and quick fixes.</p>
+          </div>
+          <div class="service">
+            <div style="font-size:22px">💡</div>
+            <h4>Lighting & Design</h4>
+            <p>Indoor & outdoor lighting, energy-efficient solutions.</p>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="feature"><span class="dot"></span><div><strong>Trusted Local Team</strong><div class="muted">Experienced electricians from your mtaani</div></div></div>
+          <div class="feature"><span class="dot"></span><div><strong>Affordable Pricing</strong><div class="muted">Transparent quotes — no surprise fees</div></div></div>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="card small">
+          <h3>Get a Quick Quote</h3>
+          <p class="muted">Send a message on WhatsApp and include your location and a short description of the job.</p>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-direction:column">
+            <a class="btn" href="https://wa.me/254769895701" target="_blank">Message on WhatsApp</a>
+            <a class="btn secondary" href="tel:+254769895701">Call Now</a>
+          </div>
+        </div>
+
+        <div class="card small">
+          <h4>Quick Contact</h4>
+          <p style="margin:6px 0"><strong>Location:</strong> Ruiru</p>
+          <p style="margin:6px 0"><strong>Phone:</strong> <a href="tel:+254769895701">+254 769 895 701</a></p>
+          <p style="margin:6px 0"><strong>Tagline:</strong> Stay Plugged. Stay Powered.</p>
+        </div>
+
+        <div class="card small">
+          <h4>Small Contact Form</h4>
+          <form onsubmit="event.preventDefault(); alert('Thanks! We will contact you via WhatsApp.'); window.open('https://wa.me/254769895701?text='+encodeURIComponent(document.getElementById('msg').value));">
+            <div class="form-row"><input id="name" placeholder="Your name" required></div>
+            <div class="form-row"><input id="phone" placeholder="Phone or WhatsApp number" required></div>
+            <div style="margin-top:8px"><textarea id="msg" placeholder="Short message / job details"></textarea></div>
+            <div style="margin-top:8px"><button class="btn" type="submit">Send to WhatsApp</button></div>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© Voltage Mtani — Ruiru • <span class="muted">Your Trusted Plug</span></div>
+    </footer>
+  </div>
+</body>
+</html>
